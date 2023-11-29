@@ -113,7 +113,7 @@ def c_lpc(audio_frames_data, rate=16000, frames_per_second = 30,chunks_length = 
 
 if __name__ == "__main__":
     import scipy.io.wavfile as wavfile
-    wav_path = "G:/input_wav.wav"
+    wav_path = "../res/1.wav"
     rate,signal = wavfile.read(wav_path)
     len(signal)/16000
 
@@ -121,5 +121,5 @@ if __name__ == "__main__":
     len(audio_frame)/30
 
     output = c_lpc(audio_frame)
-    save_file_path = "G:/out.npy"
+    save_file_path = "./temp/out.npy"
     np.save(save_file_path,output)

@@ -69,10 +69,10 @@ if __name__ == "__main__":
     sall = time.time()
     import os
     import numpy as np
-    pb_path = r"W:\YY\1029_voice2face_shirley\tf.pb"
+    pb_path = r"../zismeif.pb"
     pb_weights_animation = WeightsAnimation(pb_path)
     get_weight = pb_weights_animation.get_weight
-    npy_path = r"G:\input_lpc.npy"
+    npy_path = r"./temp/out.npy"
     data = np.load(npy_path)
     data1 = data[10:15]
     data1.shape
