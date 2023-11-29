@@ -15,7 +15,7 @@ import numpy as np
 #dll_path_win = "./lib/tensorflow/LPC.dll"
 #dll_path_linux = dll_path_win.replace('\\', '/')
 dll_path_win = "./LPC.dll"
-dll = cdll.LoadLibrary(dll_path_linux)
+dll = cdll.LoadLibrary(dll_path_win)
 LPC = dll.LPC
 
 '''
