@@ -12,8 +12,9 @@ import numpy as np
 '''
     load LPC.dll dynamically
 '''
-dll_path_win = "./lib/tensorflow/LPC.dll"
-dll_path_linux = dll_path_win.replace('\\', '/')
+#dll_path_win = "./lib/tensorflow/LPC.dll"
+#dll_path_linux = dll_path_win.replace('\\', '/')
+dll_path_win = "./LPC.dll"
 dll = cdll.LoadLibrary(dll_path_linux)
 LPC = dll.LPC
 
